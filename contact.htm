@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>Contact the Smash Bros Fan Site</title>
+
+        <meta charset="UTF-8">
+        
+        <meta name="description" content="Send your comments to this Smash Bros fan site. We love your feedback!">
+
+        <meta name="author" content="Justin Wong">
+
+        <meta name="robots" content="index">
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        
+    </head>
+
+    <body>
+        
+    <div class="main-container">
+        
+        <div class="header">
+            
+            <div class="nav">
+                <ul>
+                    <a href = "index.htm"><li>Home</li></a>
+                    <a href = "games.htm"><li>Games</li></a>
+                    <a href = "fans.htm"><li>Fans</li></a>
+                    <a class="active" href = "contact.htm"><li>Contact</li></a>
+                </ul>
+            </div>
+                              
+            <h1><img class="logo-inline" src="images/greenlogo.png" alt="green smash logo">&nbsp;&nbsp;Contact</h1>
+            
+        </div>
+        
+        <div class="content">                        
+
+            <div class="form-container">
+                <form id="formid" name="formid" method="post" action="form.php" onsubmit="return validate(this);">
+                        
+                    <!--Hidden inputs for PHP script-->
+                    <input type="hidden" id="recipient" name="recipient" value="myemail">
+
+                    <input type="hidden" id="redirect" name="redirect" value="redirect.htm">
+
+                    <input type="hidden" id="subject" name="subject" value="Form submission for Smash Bros fansite">
+
+                    <!--End of hidden inputs-->
+                    
+                    Leaving a comment? Fill out below.<br /><br />
+
+                    <input type="text" id="Fname" name="Fname" placeholder="First name" size="15" maxlength="40" alt="Input field for first name" tabindex="1" accesskey="a">
+
+                    <input type="text" id="Lname" name="Lname" placeholder="Last name" size="15" maxlength="40" alt="Input field for last name" tabindex="2" accesskey="b"><br />
+
+                    <input type="text" id="Email" name="Email" placeholder="Email" size="35" maxlength="80" alt="Input field for email" tabindex="3" accesskey="c"><br /><br />
+
+                    Subscribe to email newsletter?<br />
+                    <input type="radio" name="Subscription" id="Subscription" value="Yes" alt="Input for choosing yes to subscription" tabindex="4" accesskey="d" checked>Yes
+
+                    <input type="radio" name="Subscription" id="Subscription" value="No" alt="Input for choosing no to subscription" tabindex="5" accesskey="e">No<br /><br />
+
+                    Comments:<br />
+                    <textarea name="Comments" id="Comments" cols="36" rows="4" alt="Input your comments" tabindex="6" accesskey="f"></textarea><br /><br />
+
+                    <input type="submit" value="Submit my comments!" tabindex="7" accesskey="g" />
+ 
+                </form>
+                <script type="text/javascript" src="scripts/validate.js"></script>
+            </div>
+        
+        </div>
+        
+        <div class="footer">
+        <p style="height:100%">&copy; Justin Wong 2018&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.htm">Contact</a></p>
+        </div>
+        
+    </div>
+        
+    </body>
+    
+</html>
